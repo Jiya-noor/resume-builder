@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeCraftByJiya - Resume Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar">
+
+    <a href="#" class="logo" onclick="showHome()">
+        <span class="logo-icon">R</span>
+        ResumeCraftByJiya
+    </a>
+
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#templates">Templates</a>
+        <a href="#how">How it works</a>
+    </div>
+
+    <div class="nav-actions">
+
+        <button
+            class="icon-btn"
+            id="darkModeBtn"
+            title="Toggle dark mode"
+        >
+            🌙
+        </button>
+
+        <button
+            class="btn btn-primary"
+            onclick="openBuilder()"
+        >
+            Build Resume
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HOME PAGE
+========================================================= -->
+
+<main id="home">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                ✨ Simple • Fast • Professional
+            </div>
+
+            <h1>
+                Build a resume that
+                <span class="gradient-text">
+                    gets noticed.
+                </span>
+            </h1>
+
+            <p>
+                Create a professional, ATS-friendly resume in minutes.
+                Choose a template, enter your information and watch
+                your resume come together instantly.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="openBuilder()"
+                >
+                    Create My Resume →
+                </button>
+
+                <a
+                    href="#templates"
+                    class="btn btn-outline"
+                >
+                    View Templates
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>3</strong>
+                    <span>Templates</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Browser Based</span>
+                </div>
+
+                <div class="stat">
+                    <strong>0₹</strong>
+                    <span>Prototype Cost</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO RESUME -->
+
+        <div class="hero-preview">
+
+            <div class="floating-card one">
+                ✓ ATS Friendly
+            </div>
+
+            <div class="floating-card two">
+                ⚡ Live Preview
+            </div>
+
+            <div class="mock-resume">
+
+                <div class="mock-header">
+
+                    <h2>Alex Johnson</h2>
+
+                    <p>
+                        Computer Science Student · Delhi, India
+                    </p>
+
+                    <p>
+                        alex@email.com · +91 98765 43210
+                    </p>
+
+                </div>
+
+                <div class="mock-section">
+
+                    <h4>Profile</h4>
+
+                    <div class="mock-line"></div>
+                    <div class="mock-line"></div>
+                    <div class="mock-line medium"></div>
+
+                </div>
+
+                <div class="mock-section">
+
+                    <h4>Education</h4>
+
+                    <div class="mock-line medium"></div>
+                    <div class="mock-line short"></div>
+
+                </div>
+
+                <div class="mock-section">
+
+                    <h4>Projects</h4>
+
+                    <div class="mock-line"></div>
+                    <div class="mock-line"></div>
+                    <div class="mock-line short"></div>
+
+                </div>
+
+                <div class="mock-section">
+
+                    <h4>Skills</h4>
+
+                    <div class="mock-line medium"></div>
+                    <div class="mock-line short"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+
+    <section class="section" id="features">
+
+        <div class="section-header">
+
+            <h2>Everything you need</h2>
+
+            <p>
+                A simple resume builder designed for students,
+                freshers and job seekers.
+            </p>
+
+        </div>
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Live Preview</h3>
+
+                <p>
+                    See your resume update instantly while you
+                    enter your information.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎨</div>
+
+                <h3>Professional Templates</h3>
+
+                <p>
+                    Choose from clean, modern and professional
+                    resume layouts.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📄</div>
+
+                <h3>PDF Ready</h3>
+
+                <p>
+                    Print your resume or save it as a PDF directly
+                    from your browser.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">💾</div>
+
+                <h3>Auto Save</h3>
+
+                <p>
+                    Your resume information is automatically stored
+                    in your browser.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📊</div>
+
+                <h3>Completion Meter</h3>
+
+                <p>
+                    Track how complete your resume is while building it.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📱</div>
+
+                <h3>Responsive</h3>
+
+                <p>
+                    Build and preview your resume on desktop,
+                    tablet or mobile.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TEMPLATES
+    ====================================================== -->
+
+    <section class="section" id="templates">
+
+        <div class="section-header">
+
+            <h2>Choose your style</h2>
+
+            <p>
+                Start with a template and customize it to match
+                your personality.
+            </p>
+
+        </div>
+
+
+        <div class="templates">
+
+            <!-- MODERN -->
+
+            <div class="template-card">
+
+                <div class="template-image">
+
+                    <div class="template-paper">
+
+                        <h3>Alex Johnson</h3>
+
+                        <h5>Profile</h5>
+
+                        <p>
+                            Computer science student with experience
+                            in web development.
+                        </p>
+
+                        <h5>Experience</h5>
+
+                        <p>
+                            Software Development Intern
+                        </p>
+
+                        <h5>Education</h5>
+
+                        <p>
+                            B.Tech Computer Science
+                        </p>
+
+                        <h5>Skills</h5>
+
+                        <p>
+                            HTML · CSS · JavaScript · React
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="template-info">
+
+                    <strong>Modern</strong>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openBuilder('modern')"
+                    >
+                        Use Template
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASSIC -->
+
+            <div class="template-card">
+
+                <div class="template-image">
+
+                    <div class="template-paper">
+
+                        <h3 class="center">
+                            Alex Johnson
+                        </h3>
+
+                        <h5>Experience</h5>
+
+                        <p>
+                            Software Development Intern
+                        </p>
+
+                        <h5>Education</h5>
+
+                        <p>
+                            B.Tech Computer Science
+                        </p>
+
+                        <h5>Projects</h5>
+
+                        <p>
+                            Resume Builder Web App
+                        </p>
+
+                        <h5>Skills</h5>
+
+                        <p>
+                            JavaScript · Python · SQL
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="template-info">
+
+                    <strong>Classic</strong>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openBuilder('classic')"
+                    >
+                        Use Template
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MINIMAL -->
+
+            <div class="template-card">
+
+                <div class="template-image">
+
+                    <div class="template-paper">
+
+                        <h3>Alex Johnson</h3>
+
+                        <h5>About</h5>
+
+                        <p>
+                            Motivated student looking for opportunities
+                            in software development.
+                        </p>
+
+                        <h5>Projects</h5>
+
+                        <p>
+                            E-commerce Website
+                        </p>
+
+                        <h5>Education</h5>
+
+                        <p>
+                            B.Tech CSE
+                        </p>
+
+                        <h5>Skills</h5>
+
+                        <p>
+                            HTML · CSS · JS
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="template-info">
+
+                    <strong>Minimal</strong>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openBuilder('minimal')"
+                    >
+                        Use Template
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HOW IT WORKS
+    ====================================================== -->
+
+    <section class="section" id="how">
+
+        <div class="section-header">
+
+            <h2>How it works</h2>
+
+            <p>
+                Build your resume in three simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">1</div>
+
+                <h3>Enter your details</h3>
+
+                <p>
+                    Add your education, skills, experience,
+                    projects and personal information.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">2</div>
+
+                <h3>Customize</h3>
+
+                <p>
+                    Select a template and choose an accent
+                    color for your resume.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">3</div>
+
+                <h3>Download</h3>
+
+                <p>
+                    Print the finished resume or save it
+                    as a PDF.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     BUILDER
+========================================================= -->
+
+<section id="builder">
+
+    <div class="builder-wrapper">
+
+        <!-- TOP BAR -->
+
+        <div class="builder-topbar">
+
+            <div>
+
+                <h1>Resume Builder</h1>
+
+                <p>
+                    Create your professional resume.
+                </p>
+
+            </div>
+
+
+            <div class="builder-actions">
+
+                <button
+                    class="btn btn-outline"
+                    onclick="showHome()"
+                >
+                    ← Home
+                </button>
+
+                <button
+                    class="btn btn-outline"
+                    onclick="clearResume()"
+                >
+                    Clear
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="printResume()"
+                >
+                    🖨 Print / PDF
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BUILDER GRID -->
+
+        <div class="builder-grid">
+
+
+            <!-- =================================================
+                 EDITOR PANEL
+            ================================================== -->
+
+            <div class="editor-panel">
+
+
+                <!-- PROGRESS -->
+
+                <div class="progress-wrapper">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Resume completion
+                        </span>
+
+                        <span id="progressText">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            id="progressFill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <div class="form-section">
+
+                    <h3>👤 Personal Information</h3>
+
+                    <div class="form-grid">
+
+
+                        <div class="field">
+
+                            <label>
+                                Full Name
+                            </label>
+
+                            <input
+                                id="fullName"
+                                placeholder="Alex Johnson"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Professional Title
+                            </label>
+
+                            <input
+                                id="jobTitle"
+                                placeholder="Computer Science Student"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="alex@email.com"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Phone
+                            </label>
+
+                            <input
+                                id="phone"
+                                placeholder="+91 98765 43210"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Location
+                            </label>
+
+                            <input
+                                id="location"
+                                placeholder="Delhi, India"
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                LinkedIn
+                            </label>
+
+                            <input
+                                id="linkedin"
+                                placeholder="linkedin.com/in/alex"
+                            >
+
+                        </div>
+
+
+                        <div class="field full">
+
+                            <label>
+                                Professional Summary
+                            </label>
+
+                            <textarea
+                                id="summary"
+                                placeholder="Write a short professional summary..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION -->
+
+                <div class="form-section">
+
+                    <h3>🎓 Education</h3>
+
+                    <div
+                        class="dynamic-list"
+                        id="educationList"
+                    ></div>
+
+                    <button
+                        class="add-btn"
+                        onclick="addEducation()"
+                    >
+                        + Add Education
+                    </button>
+
+                </div>
+
+
+                <!-- EXPERIENCE -->
+
+                <div class="form-section">
+
+                    <h3>💼 Experience</h3>
+
+                    <div
+                        class="dynamic-list"
+                        id="experienceList"
+                    ></div>
+
+                    <button
+                        class="add-btn"
+                        onclick="addExperience()"
+                    >
+                        + Add Experience
+                    </button>
+
+                </div>
+
+
+                <!-- PROJECTS -->
+
+                <div class="form-section">
+
+                    <h3>🚀 Projects</h3>
+
+                    <div
+                        class="dynamic-list"
+                        id="projectList"
+                    ></div>
+
+                    <button
+                        class="add-btn"
+                        onclick="addProject()"
+                    >
+                        + Add Project
+                    </button>
+
+                </div>
+
+
+                <!-- SKILLS -->
+
+                <div class="form-section">
+
+                    <h3>🛠 Skills</h3>
+
+                    <div class="field">
+
+                        <label>
+                            Add skills separated by commas
+                        </label>
+
+                        <textarea
+                            id="skills"
+                            placeholder="HTML, CSS, JavaScript, Python, SQL"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMIZATION -->
+
+                <div class="form-section">
+
+                    <h3>🎨 Customize</h3>
+
+                    <label class="custom-label">
+                        Template
+                    </label>
+
+                    <div class="template-select">
+
+                        <button
+                            class="template-option active"
+                            data-template="modern"
+                            onclick="setTemplate('modern')"
+                        >
+                            Modern
+                        </button>
+
+                        <button
+                            class="template-option"
+                            data-template="classic"
+                            onclick="setTemplate('classic')"
+                        >
+                            Classic
+                        </button>
+
+                        <button
+                            class="template-option"
+                            data-template="minimal"
+                            onclick="setTemplate('minimal')"
+                        >
+                            Minimal
+                        </button>
+
+                    </div>
+
+
+                    <div class="color-picker-wrapper">
+
+                        <label class="custom-label">
+                            Accent Color
+                        </label>
+
+                        <div class="color-options">
+
+                            <button
+                                class="color-option active"
+                                style="background:#4f46e5"
+                                onclick="setColor('#4f46e5', this)"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                style="background:#0f766e"
+                                onclick="setColor('#0f766e', this)"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                style="background:#dc2626"
+                                onclick="setColor('#dc2626', this)"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                style="background:#9333ea"
+                                onclick="setColor('#9333ea', this)"
+                            ></button>
+
+                            <button
+                                class="color-option"
+                                style="background:#111827"
+                                onclick="setColor('#111827', this)"
+                            ></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PREVIEW PANEL
+            ================================================== -->
+
+            <div class="preview-panel">
+
+                <div class="preview-header">
+
+                    <strong>
+                        Live Preview
+                    </strong>
+
+                    <span>
+                        ● Auto-saved
+                    </span>
+
+                </div>
+
+
+                <div id="resumePreview">
+
+                    <div
+                        class="resume-paper modern"
+                        id="resumePaper"
+                        style="--resume-color:#4f46e5"
+                    >
+
+
+                        <!-- RESUME HEADER -->
+
+                        <div class="resume-header">
+
+                            <div
+                                class="resume-name"
+                                id="previewName"
+                            >
+                                Your Name
+                            </div>
+
+                            <div
+                                class="resume-title"
+                                id="previewTitle"
+                            >
+                                Professional Title
+                            </div>
+
+                            <div class="contact-line">
+
+                                <span id="previewEmail">
+                                    email@example.com
+                                </span>
+
+                                <span id="previewPhone">
+                                    +91 00000 00000
+                                </span>
+
+                                <span id="previewLocation">
+                                    Location
+                                </span>
+
+                                <span id="previewLinkedin">
+                                    LinkedIn
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUMMARY -->
+
+                        <div
+                            class="resume-section"
+                            id="summarySection"
+                        >
+
+                            <div class="resume-section-title">
+                                Profile
+                            </div>
+
+                            <div
+                                class="resume-summary"
+                                id="previewSummary"
+                            >
+                                Your professional summary will appear here.
+                            </div>
+
+                        </div>
+
+
+                        <!-- EXPERIENCE -->
+
+                        <div
+                            class="resume-section"
+                            id="experienceSection"
+                        >
+
+                            <div class="resume-section-title">
+                                Experience
+                            </div>
+
+                            <div id="previewExperience"></div>
+
+                        </div>
+
+
+                        <!-- EDUCATION -->
+
+                        <div
+                            class="resume-section"
+                            id="educationSection"
+                        >
+
+                            <div class="resume-section-title">
+                                Education
+                            </div>
+
+                            <div id="previewEducation"></div>
+
+                        </div>
+
+
+                        <!-- PROJECTS -->
+
+                        <div
+                            class="resume-section"
+                            id="projectSection"
+                        >
+
+                            <div class="resume-section-title">
+                                Projects
+                            </div>
+
+                            <div id="previewProjects"></div>
+
+                        </div>
+
+
+                        <!-- SKILLS -->
+
+                        <div
+                            class="resume-section"
+                            id="skillsSection"
+                        >
+
+                            <div class="resume-section-title">
+                                Skills
+                            </div>
+
+                            <div
+                                class="skills-list"
+                                id="previewSkills"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    ResumeCraft · College Project Prototype ·
+    Built with HTML, CSS & JavaScript
+
+</footer>
+
+
+<!-- TOAST -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    Saved!
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
