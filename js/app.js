@@ -3,7 +3,7 @@
 ========================================================= */
 
 let currentTemplate = "modern";
-let currentColor = "#4f46e5";
+let currentColor = "#ec4899";
 
 let educationCount = 0;
 let experienceCount = 0;

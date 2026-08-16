@@ -9,17 +9,17 @@
 }
 
 :root {
-    --primary: #4f46e5;
-    --primary-dark: #3730a3;
-    --secondary: #7c3aed;
+    --primary: #ec4899;
+    --primary-dark: #be185d;
+    --secondary: #f472b6;
 
     --text: #172033;
     --muted: #667085;
 
-    --bg: #f7f8fc;
+    --bg: #fff7fb;
     --card: #ffffff;
 
-    --border: #e5e7eb;
+    --border: #f9d6e8;
 
     --success: #16a34a;
     --danger: #dc2626;
@@ -199,7 +199,7 @@ button {
 
     box-shadow:
         0 8px 20px
-        rgba(79, 70, 229, 0.25);
+        rgba(236, 72, 153, 0.25);
 }
 
 .btn-outline {
@@ -242,12 +242,12 @@ button {
     background:
         radial-gradient(
             circle at 80% 30%,
-            rgba(124, 58, 237, 0.12),
+            rgba(244, 114, 182, 0.14),
             transparent 30%
         ),
         radial-gradient(
             circle at 10% 80%,
-            rgba(79, 70, 229, 0.09),
+            rgba(236, 72, 153, 0.10),
             transparent 30%
         ),
         var(--bg);
@@ -265,7 +265,7 @@ button {
     border-radius: 30px;
 
     background:
-        rgba(79, 70, 229, 0.1);
+        rgba(236, 72, 153, 0.1);
 
     color: var(--primary);
 
@@ -409,7 +409,7 @@ button {
 
 .mock-header {
     border-bottom:
-        2px solid #4f46e5;
+        2px solid var(--primary);
 
     padding-bottom: 18px;
 
@@ -433,7 +433,7 @@ button {
 }
 
 .mock-section h4 {
-    color: #4f46e5;
+    color: var(--primary);
 
     text-transform: uppercase;
 
@@ -528,7 +528,7 @@ button {
     border-radius: 12px;
 
     background:
-        rgba(79, 70, 229, 0.1);
+        rgba(236, 72, 153, 0.1);
 
     color: var(--primary);
 
@@ -600,7 +600,7 @@ button {
     font-size: 18px;
 
     border-bottom:
-        2px solid #4f46e5;
+        2px solid var(--primary);
 
     padding-bottom: 8px;
 }
@@ -612,7 +612,7 @@ button {
 .template-paper h5 {
     margin-top: 18px;
 
-    color: #4f46e5;
+    color: var(--primary);
 
     font-size: 9px;
 
@@ -873,7 +873,7 @@ button {
 
     box-shadow:
         0 0 0 3px
-        rgba(79, 70, 229, .1);
+        rgba(236, 72, 153, .1);
 }
 
 
@@ -980,7 +980,7 @@ button {
     color: var(--primary);
 
     background:
-        rgba(79, 70, 229, .08);
+        rgba(236, 72, 153, .08);
 }
 
 .color-picker-wrapper {
