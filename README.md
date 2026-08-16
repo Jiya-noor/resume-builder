@@ -1,4 +1,4 @@
-# ResumeCraft - Resume Builder
+# ResumeCraft - Resume Builder [Live Demo →](https://resume-builder-nu-gold.vercel.app/)
 
 A simple, modern and responsive **Resume Builder Web Application** built using **HTML, CSS and JavaScript**.
 
